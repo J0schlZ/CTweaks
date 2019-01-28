@@ -31,4 +31,5 @@ Der Spawn-Versuch wird abgebrochen.
  
  - Bei einem blockiertem Versuch eines Mob-Spawners, ein Mob zu spawnen `SpawnReason.SPAWNER`, werden (alle) Spieler in einem Umkreis von **16 Blöcken** benachrichtigt.
  
- - Bei einem blockiertem Versuch eine Kreatur mit einem Spawn-Ei zu spawnen `SpawnReason.SPAWNER_EGG`, werden (alle) Spieler in einem Umkreis von **8 Blöcken** benachrichtigt. (Das könnte man noch abändern, so dass nur der Nutzer des Spawn-Ei die Nachricht erhält.)
+ - Bei einem blockiertem Versuch eine Kreatur mit einem Spawn-Ei zu spawnen `SpawnReason.SPAWNER_EGG`, werden (alle) Spieler in einem Umkreis von **8 Blöcken** benachrichtigt.
+ (Das könnte man noch abändern, so dass nur der Nutzer des Spawn-Ei die Nachricht erhält.)
