@@ -29,7 +29,7 @@ Der Spawn-Versuch wird abgebrochen.
  
  - Bei einem blockiertem Versuch ein Küken durch den wurf eines Ei zu spawnen `SpawnReason.EGG` werden (alle) Spieler in einem Umkreis von 32 Blöcken benachrichtigt.
  
- - Bei einem blockiertem Versuch einen Golem oder Wither zu spawnen `SpawnReason.BUILD_IRONGOLEM, SpawnReason.BUILD_SNOWMAN, SpawnReason.BUILD_WITHER` werden (alle) Spieler in einem Umkreis von 8 Blöcken benachrichtigt.
+ - Bei einem blockiertem Versuch einen Golem oder Wither zu spawnen `SpawnReason.BUILD_IRONGOLEM`, `SpawnReason.BUILD_SNOWMAN`,  `SpawnReason.BUILD_WITHER` werden (alle) Spieler in einem Umkreis von 8 Blöcken benachrichtigt.
  
  - Bei einem blockiertem Versuch eines Mob-Spawners, ein Mob zu spawnen `SpawnReason.SPAWNER`, werden (alle) Spieler in einem Umkreis von 16 Blöcken benachrichtigt.
  
