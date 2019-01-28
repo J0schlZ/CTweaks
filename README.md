@@ -24,13 +24,11 @@ Der Spawn-Versuch wird abgebrochen.
  - Bei jedem Spawn-Versuch eines Guardian, Endermen oder Zombie-Pigmen wird die Anzahl der Mobs nach dem oben beschriebenen Verfahren verringert, sollten sich bei der Zählung mehr als 40 Monster eines Typs in einem Radius von 128 Blöcken finden.
 Der Spawn-Versuch wird abgebrochen.
 
-### Benachrichtigungen bei blockiertem Spawn-Versuch:
- - Bei einem blockiertem Versuch ein Tier zu züchten `SpawnReason: BREEDING` werden (alle) Spieler in einem Umkreis von 32 Blöcken benachrichtigt.
+### Benachrichtigungen bei blockiertem Spawn-Versuch: 
+ - Bei einem blockiertem Versuch ein Küken durch den wurf eines Ei zu spawnen, oder ein Tier zu züchten, `SpawnReason.EGG`, `SpawnReason.BREEDING` werden (alle) Spieler in einem Umkreis von **32 Blöcken** Blöcken benachrichtigt.
  
- - Bei einem blockiertem Versuch ein Küken durch den wurf eines Ei zu spawnen `SpawnReason.EGG` werden (alle) Spieler in einem Umkreis von 32 Blöcken benachrichtigt.
+ - Bei einem blockiertem Versuch einen Golem oder Wither zu spawnen `SpawnReason.BUILD_IRONGOLEM`, `SpawnReason.BUILD_SNOWMAN`,  `SpawnReason.BUILD_WITHER` werden (alle) Spieler in einem Umkreis von **8 Blöcken** benachrichtigt.
  
- - Bei einem blockiertem Versuch einen Golem oder Wither zu spawnen `SpawnReason.BUILD_IRONGOLEM`, `SpawnReason.BUILD_SNOWMAN`,  `SpawnReason.BUILD_WITHER` werden (alle) Spieler in einem Umkreis von 8 Blöcken benachrichtigt.
+ - Bei einem blockiertem Versuch eines Mob-Spawners, ein Mob zu spawnen `SpawnReason.SPAWNER`, werden (alle) Spieler in einem Umkreis von **16 Blöcken** benachrichtigt.
  
- - Bei einem blockiertem Versuch eines Mob-Spawners, ein Mob zu spawnen `SpawnReason.SPAWNER`, werden (alle) Spieler in einem Umkreis von 16 Blöcken benachrichtigt.
- 
- - Bei einem blockiertem Versuch eine Kreatur mit einem Spawn-Ei zu spawnen `SpawnReason.SPAWNER_EGG`, werden (alle) Spieler in einem Umkreis von 8 Blöcken benachrichtigt.
+ - Bei einem blockiertem Versuch eine Kreatur mit einem Spawn-Ei zu spawnen `SpawnReason.SPAWNER_EGG`, werden (alle) Spieler in einem Umkreis von **8 Blöcken** benachrichtigt. (Das könnte man noch abändern, so dass nur der Nutzer des Spawn-Ei die Nachricht erhält.)
