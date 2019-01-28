@@ -1,0 +1,11 @@
+name: CTweaks
+main: de.crafttogether.CTweaks
+version: 1.0
+website: http://www.craft-together.de
+author: J0schlZ
+description: Lag prevention and monitoring
+api-version: 1.13
+commands:
+   ctweaks:
+     description: just a command
+     usage: /ctweaks
