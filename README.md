@@ -16,7 +16,7 @@ Some tweaks for CT..
 Finden sich mehr als 50 NPC eines Typ bei der zählung, werden von den gefundenen NPC (ausgenommen jener die einen Nametag besitzen) so viele einheiten
 despawned, bis die Anzahl 50 beträgt. Der Spawn-Versuch wird abgebrochen.
 
- - Bei jedem Spawn-Versuch (innerhalb von Ozean-Biomen) wird um massivem Fisch-Spawning entgegen zu wirken, die Anzahl der gefundenen Fische eines Typs
+ - Bei jedem Spawn-Versuch (innerhalb von Ozean-Biomen) wird um massivem Fisch-Spawning entgegen zu wirken, die Anzahl der Fische eines Typs
 in einem Radius von 192 Blöcken ermittelt. Finden sich mehr als 30 Fische eines Typs bei der Zählung, werden von den gefundenen Fischen
 (ausgenommen jeder die einen Nametag besitzen) so viele einheiten despawned, bis die Anzahl 50 beträgt.
 Der Spawn-Versuch wird abgebrochen.
