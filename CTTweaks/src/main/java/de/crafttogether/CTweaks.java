@@ -48,7 +48,6 @@ public class CTweaks extends JavaPlugin
 
         Commands cmdHandler = new Commands();
         this.registerCommand("ctweaks", cmdHandler);
-        this.registerCommand("listmobs", cmdHandler);
         Bukkit.getPluginManager().registerEvents(new Events(), this);
     }
     
