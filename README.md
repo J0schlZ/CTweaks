@@ -19,9 +19,10 @@ despawned, bis die Anzahl 50 beträgt. Der Spawn-Versuch wird abgebrochen.
  - Bei jedem Spawn-Versuch (innerhalb von Ozean-Biomen) wird um massivem Fisch-Spawning entgegen zu wirken, die Anzahl der gefundenen Fische eines Typs
 in einem Radius von 192 Blöcken ermittelt. Finden sich mehr als 30 Fische eines Typs bei der Zählung, werden von den gefundenen Fischen
 (ausgenommen jeder die einen Nametag besitzen) so viele einheiten despawned, bis die Anzahl 50 beträgt.
+Der Spawn-Versuch wird abgebrochen.
 
- - Bei jedem Spawn-Versuch eines Guardian, Endermen oder Zombie-Pigmen wird die Anzahl der Mobs nach dem oben beschriebenen Verfahren Limitiert,
-sollten sich bei der Zählung mehr als 40 Monster eines Typs in einem Radius von 128 Blöcken finden.
+ - Bei jedem Spawn-Versuch eines Guardian, Endermen oder Zombie-Pigmen wird die Anzahl der Mobs nach dem oben beschriebenen Verfahren verringert, sollten sich bei der Zählung mehr als 40 Monster eines Typs in einem Radius von 128 Blöcken finden.
+Der Spawn-Versuch wird abgebrochen.
 
 ### Benachrichtigungen bei blockiertem Spawn-Versuch:
  - Bei einem blockiertem Versuch ein Tier zu züchten (SpawnReason: BREEDING) werden (alle) Spieler in einem Umkreis von 32 Blöcken benachrichtigt.
