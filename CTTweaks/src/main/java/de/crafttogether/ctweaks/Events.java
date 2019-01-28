@@ -73,7 +73,7 @@ public class Events implements Listener
 	  	// Reduce fishy spawnings
 	  	if (entType.equals(EntityType.COD) || entType.equals(EntityType.TROPICAL_FISH) || entType.equals(EntityType.SALMON)) {
 	  		List<LivingEntity> found = Methods.getEntitiesAround(Methods.getEntities(ent.getWorld(), entType), ent.getLocation(), 192);
-	  		if (found.size() > 40 && reason.equals(SpawnReason.NATURAL) || reason.equals(SpawnReason.DEFAULT)) {
+	  		if (found.size() > 30 && reason.equals(SpawnReason.NATURAL) || reason.equals(SpawnReason.DEFAULT)) {
 	  			e.setCancelled(true);
 	  			return;
 	  		}
