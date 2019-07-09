@@ -120,7 +120,7 @@ public class MonitorTask extends BukkitRunnable {
 					continue;
 				
 				if (entities2.size() > 54 && !actionBarAlreadySend) {
-					output = "&eIm Umkreis von &6" + range + " &eBlöcken sind über &455 &c" + entType2.name() + "&4! &eBitte unternimm etwas dagegen.";
+					output = "&eIm Umkreis von &6" + range + " &eBlÃ¶cken sind Ã¼ber &455 &c" + entType2.name() + "&4! &eBitte unternimm etwas dagegen.";
 					p.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.fromLegacyText(ChatColor.translateAlternateColorCodes('&', output)));
 					actionBarAlreadySend = true;
 				}

@@ -44,7 +44,7 @@ public class Events implements Listener
     
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onEntityDeath(EntityDeathEvent e) {
-    	World world = e.getEntity().getLocation().getWorld();
+    	final World world = e.getEntity().getLocation().getWorld();
     	if (e.getEntityType().equals(EntityType.ENDER_DRAGON) && world.getName().toLowerCase().contains("the_end")) {
     		new BukkitRunnable() {
     			public void run() {
@@ -71,11 +71,18 @@ public class Events implements Listener
 	  	}	  	
 
 	  	// Reduce fishy spawnings
-	  	if (entType.equals(EntityType.COD) || entType.equals(EntityType.TROPICAL_FISH) || entType.equals(EntityType.SALMON)) {
+	  	if (entType.equals(EntityType.COD) || entType.equals(EntityType.TROPICAL_FISH) || entType.equals(EntityType.SALMON) || entType.equals(EntityType.PILLAGER)) {
 	  		List<LivingEntity> found = Methods.getEntitiesAround(Methods.getEntities(ent.getWorld(), entType), ent.getLocation(), 192);
-	  		if (found.size() > 30 && reason.equals(SpawnReason.NATURAL) || reason.equals(SpawnReason.DEFAULT)) {
-	  			e.setCancelled(true);
-	  			return;
+
+	  		
+	  		if (found.size() > 30) {
+	  			for (int i = 31; i < found.size(); i++)
+	  				found.get(i).remove();
+	  			
+	  			if (reason.equals(SpawnReason.NATURAL) || reason.equals(SpawnReason.DEFAULT) || reason.equals(SpawnReason.VILLAGE_INVASION) || reason.equals(SpawnReason.REINFORCEMENTS)) {
+	  				e.setCancelled(true);
+	  				return;
+	  			}
 	  		}
 	  	}	  	
 
@@ -83,7 +90,7 @@ public class Events implements Listener
 	  	if (entType.equals(EntityType.GUARDIAN) || entType.equals(EntityType.ENDERMAN) || entType.equals(EntityType.PIG_ZOMBIE)) {
 	  		List<LivingEntity> found = Methods.getEntitiesAround(Methods.getEntities(ent.getWorld(), entType), ent.getLocation(), 128);
 	  		if (found.size() > 40) {
-	  			for (int i = 41; i > found.size(); i++)
+	  			for (int i = 41; i < found.size(); i++)
 	  				found.get(i).remove();
 	  			
 	  			if (reason.equals(SpawnReason.NATURAL) || reason.equals(SpawnReason.DEFAULT) || reason.equals(SpawnReason.NETHER_PORTAL)) {

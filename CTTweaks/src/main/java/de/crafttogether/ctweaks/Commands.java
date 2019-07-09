@@ -63,7 +63,7 @@ public class Commands implements TabExecutor
 	    		}
 	    		if (args.length > 1 && args[1].equalsIgnoreCase("commandblock")) {
 	    			Config.isCommandBlockBlocked = false;
-	    			p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6Befehlsblöcke &aaktiviert."));
+	    			p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6Befehlsblï¿½cke &aaktiviert."));
 	    		}
 	    		break;
 	    	}
@@ -86,7 +86,7 @@ public class Commands implements TabExecutor
 	    		}
 	    		if (args.length > 1 && args[1].equalsIgnoreCase("commandblock")) {
 	    			Config.isCommandBlockBlocked = true;
-	    			p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6Befehlsblöcke &cdeaktiviert."));
+	    			p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&6Befehlsblï¿½cke &cdeaktiviert."));
 	    		}
 	    		break;
 	    	}
@@ -166,7 +166,7 @@ public class Commands implements TabExecutor
 	    		if (range.equals("world"))
 	    			rangeTxt = " in &e" + world.getName();
 	    		else if (range.equals("radius"))
-	    			rangeTxt = " im Umkreis von &a" + Integer.parseInt(args[1]) + " &6Blöcken";
+	    			rangeTxt = " im Umkreis von &a" + Integer.parseInt(args[1]) + " &6BlÃ¶cken";
 	    		else
 	    			rangeTxt = "";
 	    		
